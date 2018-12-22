@@ -26,7 +26,7 @@ Secondly, and relatedly, we had to decide what types of questions we wanted anal
 <p>
   We then proceeded to use this database as a list for performing API calls on the other two datasets. This allowed us to minimize calling unnecessary data through APIs that otherwise would have been filtered out and discarded while performing joins on databases in memory.
 <p>
-  The <b>PLAYER_ID</b> column was iterated against the NBA stats API to pull game data from the previous day. Various statistics regarding the players performance within games were pulled through the NBA stats API into a local dataframe, reorganized, and then sent to the local mySQL environment.
+  The <b>PLAYER_ID</b> column was iterated against the NBA stats API to pull game data from the previous day. In order to access the NBA API, this required running <i>pip install nba_api</i> within a GitBash terminal.  This would allow the importation of pre-existing python modules to facilitate access to the NBA API. Various statistics regarding the players performance within games were pulled through the NBA stats API into a local dataframe, reorganized, and then sent to the local mySQL environment.
 <p>
  Player Game Stats Table Field Definitions
 <br>
